@@ -5,8 +5,19 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+/**
+ created by vamshidhar gade on 11/16/18
+ */
 @Entity
 public class Author {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
